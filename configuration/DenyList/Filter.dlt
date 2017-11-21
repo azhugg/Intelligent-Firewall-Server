@@ -1,0 +1,10 @@
+option small_frags on eth0
+pass in on eth0 all
+pass out on eth0 all
+block in on eth0 proto any from 192.168.1.5 to any
+block in on eth0 proto any from 192.168.1.125 to any
+block in on eth0 proto any from 192.168.1.135 to any
+block in on eth0 proto any from 192.168.1.155 to any
+block in on eth0 proto any from 192.168.1.165 to any
+block in on eth0 proto any from 192.168.1.175 to any
+block in on eth0 proto any from 192.168.1.4 to anyblock in on eth0 proto any from 192.168.1.4 to anyblock in on eth0 proto any from 192.168.1.6 to anyblock in on eth0 proto any from 192.168.1.6 to any
