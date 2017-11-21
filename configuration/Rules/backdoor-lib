@@ -1,0 +1,30 @@
+#IFServer IDS Rules Defination
+# backdoors (Back Orifice, etc) 
+
+alert tcp !$HOME_NET any -> $HOME_NET 1524 (msg: "default Backdoor access!"; flags: S;)
+
+# Backdoor Default Ports (not useful on networks with outgoing traffic)
+alert tcp $HOME_NET 555 -> any any (msg:"Phase Zero Server Active on Network"; content: "phAse"; flags: PA;)
+alert udp any any -> $HOME_NET 10067 (msg:"Portal Of Doom"; content: "pod";)
+alert tcp any any -> $HOME_NET 12345 (msg:"Netbus/GabanBus"; flags: S;)
+alert tcp any any -> $HOME_NET 12346 (msg:"Netbus/GabanBus"; flags: S;)
+alert udp any any -> $HOME_NET 31337 (msg:"Back Orifice";)
+alert udp any any -> $HOME_NET 31338 (msg:"Deep Back Orifice";)
+alert tcp any any -> $HOME_NET 31337 (msg:"BIND Shell"; flags: S;)
+alert udp any any -> $HOME_NET 5632 (msg:"PCAnywhere"; content:"ST";)
+alert udp any any -> $HOME_NET 22 (msg:"PCAnywhere"; content:"ST";)
+alert udp any any -> $HOME_NET 22 (msg:"PCAnywhere"; content:"NQ";)
+
+alert udp $HOME_NET 10167 -> any any (content:"KeepAliveee"; msg:"Portal of Doom access";)
+
+alert tcp any any -> $HOME_NET 30100 (msg:"Possible NetSphere access"; flags: S;)
+alert tcp $HOME_NET 30100 -> any any (content:"<NetSphere"; msg:"NetSphere access"; flags: PA;)
+alert tcp any any -> $HOME_NET 30102 (msg:"Possible NetSphere FTP acces"; flags: S;)
+alert tcp $HOME_NET 30102 -> any any (content:"NetSphere Capture FTP"; msg:"NetSphere FTP acces"; flags: PA;)
+alert tcp $HOME_NET 6969 -> any any (content:"GateCrasher"; msg:"GateCrasher access"; flags: PA;)
+alert tcp any any -> $HOME_NET 21554 (msg:"Possible GirlFriend access"; flags: S;)
+alert tcp $HOME_NET 21554 -> any any (content:"Girl"; msg:"GirlFriend access"; flags: PA;)
+alert tcp any any -> $HOME_NET 23456 (msg:"Possible EvilFTP access"; flags: S;)
+alert tcp $HOME_NET 23456 -> any any (content:"EvilFTP"; msg:"EvilFTP access"; flags: PA;)
+alert tcp any any -> $HOME_NET 1243 (msg:"Possible SubSeven access"; flags: S;)
+alert tcp any any -> $HOME_NET 6776 (msg:"Possible SubSeven access"; flags: S;)

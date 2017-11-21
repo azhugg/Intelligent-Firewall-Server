@@ -1,0 +1,6 @@
+#IFServer IDS Rules 
+alert tcp $HOME_NET any -> $HOME_NET 111 (msg:"RPC Info Query"; content:"|00 01 86 A0 00 00 00 02 00 00 00 04|";) 
+alert udp $HOME_NET any -> $HOME_NET 111 (msg:"RPC - portmap-request-bootparam"; content:"|01 86 BA 00 00|";offset:40;depth:8;) 
+alert udp $HOME_NET any -> $HOME_NET 111 (msg:"RPC - portmap-request-cmsd"; content:"|01 86 E4 00 00|";offset:40;depth:8;) 
+alert tcp $HOME_NET any -> $HOME_NET 32771:34000 (msg:"IDS242 - CVE-1999-0003 - RPC ttdbserv Solaris Overflow"; flags: PA; dsize: >999; content: "|00 01 86 F3 00 00 00 01 00 00 00 0F 00 00 00 01|";) 
+

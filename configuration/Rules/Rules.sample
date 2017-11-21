@@ -1,0 +1,83 @@
+#IFServer IDS Rules Defination
+
+# Some of these rules may not be suspicious in your network environment, and
+# using all of the rules at the same time may lead to serious packet loss
+# on slower machines.  YMMV, use with caution, standard disclaimers apply. :)
+
+# syslog alert plugin
+# format=>  plugin_name: syslog_facilities (multiple entries ok)
+
+ output alert_syslog: LOG_AUTH LOG_ALERT
+
+# tcpdump format binary logging plugin
+# format => plugin_name: output_file_name
+
+ output log_tcpdump: ifs.log
+
+# Database logging plugin.  See the documentation in the spo_log_database.c
+# file for more information on configuring and using this module.  Pick 
+# your favorite!
+
+preprocessor defrag
+
+# http_decode takes the port numbers that it's going to analyze as arguments
+# traffic on these ports will be sent through the http_decode routine for
+# normalization
+
+preprocessor http_decode: 80 8080
+
+# minfrag takes the minimum fragment size (in bytes) threshold as its argument
+# fragmented packets at of below this size will cause an alert to be generated
+
+preprocessor minfrag: 128
+
+# set the HOME_NET variable for your own network
+
+###############################################################################
+# SET THIS VARIABLE TO COVER YOUR OWN NETWORK RANGE!!!!
+###############################################################################
+#var HOME_NET 10.1.1.0/24
+#var HOME_NET 192.168.1.0/24
+var HOME_NET any
+
+
+# set your DNS server IP (or whatever) so you don't show "portscans" from 
+# that address
+
+###############################################################################
+# SET THIS VARIABLE TO AS IT APPLIES TO YOUR NETWORK!!!!
+###############################################################################
+var DNS_SERVER 192.168.1.1/32
+
+# This detects UDP packets or TCP SYN packets
+# going to seven different ports in less than two seconds.
+# "Stealth" TCP packets are always detected, regardless
+# of these settings.
+
+#preprocessor portscan: $HOME_NET 4 3 portscan.log
+
+# ignorehosts is set to ignore TCP SYN and UDP "scans" from
+# your home net by default to reduce false alerts.  However,
+# for maximum benefit it should be tweaked to only include a
+# whitespace-delimited list of only your noisiest servers/hosts.
+
+#preprocessor portscan-ignorehosts: $DNS_SERVER
+
+include e:/temp/rules/webcgi-lib
+include e:/temp/rules/webcf-lib
+include e:/temp/rules/webiis-lib
+include e:/temp/rules/webfp-lib
+include e:/temp/rules/webmisc-lib
+include e:/temp/rules/overflow-lib
+include e:/temp/rules/finger-lib
+include e:/temp/rules/ftp-lib
+include e:/temp/rules/smtp-lib
+include e:/temp/rules/telnet-lib
+include e:/temp/rules/misc-lib
+include e:/temp/rules/netbios-lib
+include e:/temp/rules/scan-lib
+include e:/temp/rules/ddos-lib
+include e:/temp/rules/backdoor-lib
+include e:/temp/rules/ping-lib
+include e:/temp/rules/rpc-lib
+
