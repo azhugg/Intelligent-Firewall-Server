@@ -1,0 +1,349 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: IFServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\IFServer\AlertScreenDlg.cpp"
+"E:\IFServer\AlertSMB.cpp"
+"E:\IFServer\AlertSysLog.cpp"
+"E:\IFServer\AlertUnixSocket.cpp"
+"E:\IFServer\ConfigA.cpp"
+"E:\IFServer\DatabaseLog.cpp"
+"E:\IFServer\Decode.cpp"
+"E:\IFServer\Defrag.cpp"
+"E:\IFServer\DSizeCheck.cpp"
+"E:\IFServer\FastAlert.cpp"
+"E:\IFServer\FileManagement.cpp"
+"E:\IFServer\FullAlert.cpp"
+"E:\IFServer\HttpDecode.cpp"
+"E:\IFServer\IcmpCodeCheck.cpp"
+"E:\IFServer\IcmpIdCheck.cpp"
+"E:\IFServer\IcmpSeqCheck.cpp"
+"E:\IFServer\IcmpTypeCheck.cpp"
+"E:\IFServer\IFServer.cpp"
+"E:\IFServer\IFServerDlg.cpp"
+"E:\IFServer\IFServerStatic.cpp"
+"E:\IFServer\IFServerSubDlg.cpp"
+"E:\IFServer\IpIdCheck.cpp"
+"E:\IFServer\IpOptionCheck.cpp"
+"E:\IFServer\LibCap.cpp"
+"E:\IFServer\Log.cpp"
+"E:\IFServer\MinFrag.cpp"
+"E:\IFServer\PatternMatch.cpp"
+"E:\IFServer\PortScan.cpp"
+"E:\IFServer\Preprocessor.cpp"
+"E:\IFServer\Respond.cpp"
+"E:\IFServer\RpcCheck.cpp"
+"E:\IFServer\Rules.cpp"
+"E:\IFServer\SelectAdaptor.cpp"
+"E:\IFServer\Session.cpp"
+"E:\IFServer\StringMan.cpp"
+"E:\IFServer\SysLog.cpp"
+"E:\IFServer\TcpAckCheck.cpp"
+"E:\IFServer\TcpDumpLog.cpp"
+"E:\IFServer\TcpFlagCheck.cpp"
+"E:\IFServer\TcpSeqCheck.cpp"
+"E:\IFServer\TrafficControl.cpp"
+"E:\IFServer\TtlCheck.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12A.tmp" 
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12B.tmp" with contents
+[
+debug/libpcap.lib user32.lib wsock32.lib advapi32.lib iphlpapi.lib ole32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/IFServer.pdb" /debug /machine:I386 /out:"Debug/IFServer.exe" /pdbtype:sept 
+.\Debug\AlertScreenDlg.obj
+.\Debug\AlertSMB.obj
+.\Debug\AlertSysLog.obj
+.\Debug\AlertUnixSocket.obj
+.\Debug\BalloonHelp.obj
+.\Debug\ConfigA.obj
+.\Debug\ConfigB.obj
+.\Debug\ConfigC.obj
+.\Debug\ConfigD.obj
+.\Debug\ConfigE.obj
+.\Debug\DatabaseLog.obj
+.\Debug\Decode.obj
+.\Debug\Defrag.obj
+.\Debug\DSizeCheck.obj
+.\Debug\FastAlert.obj
+.\Debug\FileManagement.obj
+.\Debug\FullAlert.obj
+.\Debug\HttpDecode.obj
+.\Debug\IcmpCodeCheck.obj
+.\Debug\IcmpIdCheck.obj
+.\Debug\IcmpSeqCheck.obj
+.\Debug\IcmpTypeCheck.obj
+.\Debug\IFServer.obj
+.\Debug\IFServerDlg.obj
+.\Debug\IFServerStatic.obj
+.\Debug\IFServerSubDlg.obj
+.\Debug\IpIdCheck.obj
+.\Debug\IpOptionCheck.obj
+.\Debug\LibCap.obj
+.\Debug\LineColl.obj
+.\Debug\Log.obj
+.\Debug\Manipulate.obj
+.\Debug\Message.obj
+.\Debug\MinFrag.obj
+.\Debug\PatternMatch.obj
+.\Debug\PortScan.obj
+.\Debug\Preprocessor.obj
+.\Debug\Respond.obj
+.\Debug\RpcCheck.obj
+.\Debug\Rules.obj
+.\Debug\SelectAdaptor.obj
+.\Debug\Session.obj
+.\Debug\StdAfx.obj
+.\Debug\StringMan.obj
+.\Debug\StrMan.obj
+.\Debug\SysLog.obj
+.\Debug\TcpAckCheck.obj
+.\Debug\TcpDumpLog.obj
+.\Debug\TcpFlagCheck.obj
+.\Debug\TcpSeqCheck.obj
+.\Debug\TrafficControl.obj
+.\Debug\TtlCheck.obj
+.\Debug\IFServer.res
+.\Debug\LIBPCAP.LIB
+.\WS2_32.LIB
+.\WSOCK32.LIB
+.\IPHlpApi.lib
+]
+Creating command line "link.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12B.tmp"
+<h3>Output Window</h3>
+Compiling...
+AlertScreenDlg.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Generating Code...
+Compiling...
+AlertSMB.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+AlertSysLog.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+AlertUnixSocket.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+ConfigA.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+DatabaseLog.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Decode.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\decode.cpp(137) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+Defrag.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+DSizeCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+FastAlert.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+FileManagement.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\filemanagement.cpp(45) : warning C4101: 'strchr' : unreferenced local variable
+e:\ifserver\filemanagement.cpp(102) : warning C4101: 'strchr' : unreferenced local variable
+FullAlert.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+HttpDecode.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\httpdecode.cpp(59) : warning C4101: 'strchr' : unreferenced local variable
+e:\ifserver\httpdecode.cpp(60) : warning C4101: 'end' : unreferenced local variable
+IcmpCodeCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+IcmpIdCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+IcmpSeqCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+IcmpTypeCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+IFServer.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.cpp(310) : warning C4145: '&&' : relational expression as switch expression; possible confusion with '&'
+e:\ifserver\ifserver.cpp(333) : warning C4808: case '2' is not a valid value for switch condition of type 'bool'
+e:\ifserver\ifserver.cpp(333) : warning C4808: case '3' is not a valid value for switch condition of type 'bool'
+e:\ifserver\ifserver.cpp(333) : warning C4808: case '4' is not a valid value for switch condition of type 'bool'
+e:\ifserver\ifserver.cpp(617) : warning C4244: '=' : conversion from 'unsigned long' to 'float', possible loss of data
+e:\ifserver\ifserver.cpp(634) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+e:\ifserver\ifserver.cpp(635) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+e:\ifserver\ifserver.cpp(797) : warning C4390: ';' : empty controlled statement found; is this the intent?
+e:\ifserver\ifserver.cpp(799) : warning C4390: ';' : empty controlled statement found; is this the intent?
+e:\ifserver\ifserver.cpp(899) : warning C4390: ';' : empty controlled statement found; is this the intent?
+IFServerDlg.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+IFServerSubDlg.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+IpIdCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Generating Code...
+Compiling...
+IpOptionCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+LibCap.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\libcap.cpp(117) : warning C4390: ';' : empty controlled statement found; is this the intent?
+Log.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\program files\vstudio\vc98\include\direct.h(132) : warning C4003: not enough actual parameters for macro 'mkdir'
+e:\ifserver\log.cpp(45) : warning C4390: ';' : empty controlled statement found; is this the intent?
+MinFrag.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+PatternMatch.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\patternmatch.cpp(169) : warning C4244: '=' : conversion from 'unsigned long' to 'char', possible loss of data
+PortScan.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\portscan.cpp(704) : warning C4390: ';' : empty controlled statement found; is this the intent?
+e:\ifserver\portscan.cpp(708) : warning C4390: ';' : empty controlled statement found; is this the intent?
+e:\ifserver\portscan.cpp(759) : warning C4390: ';' : empty controlled statement found; is this the intent?
+Preprocessor.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\preprocessor.cpp(90) : warning C4390: ';' : empty controlled statement found; is this the intent?
+Respond.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+RpcCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Rules.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\rules.cpp(479) : warning C4101: 'strchr' : unreferenced local variable
+e:\ifserver\rules.cpp(549) : warning C4390: ';' : empty controlled statement found; is this the intent?
+SelectAdaptor.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Session.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\program files\vstudio\vc98\include\direct.h(132) : warning C4003: not enough actual parameters for macro 'mkdir'
+StringMan.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\stringman.cpp(38) : warning C4305: 'initializing' : truncation from 'const int' to 'char'
+e:\ifserver\stringman.cpp(38) : warning C4309: 'initializing' : truncation of constant value
+SysLog.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+TcpAckCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+TcpDumpLog.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+TcpFlagCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+TcpSeqCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+TrafficControl.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\trafficcontrol.cpp(17) : warning C4005: 'FAILED' : macro redefinition
+        c:\program files\vstudio\vc98\include\winerror.h(7933) : see previous definition of 'FAILED'
+e:\ifserver\trafficcontrol.cpp(356) : warning C4018: '>=' : signed/unsigned mismatch
+e:\ifserver\trafficcontrol.cpp(369) : warning C4018: '>=' : signed/unsigned mismatch
+e:\ifserver\trafficcontrol.cpp(382) : warning C4018: '>=' : signed/unsigned mismatch
+e:\ifserver\trafficcontrol.cpp(341) : warning C4101: 'idx' : unreferenced local variable
+e:\ifserver\trafficcontrol.cpp(496) : warning C4390: ';' : empty controlled statement found; is this the intent?
+e:\ifserver\trafficcontrol.cpp(466) : warning C4101: 'startpos' : unreferenced local variable
+e:\ifserver\trafficcontrol.cpp(466) : warning C4101: 'filepos' : unreferenced local variable
+TtlCheck.cpp
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\ifserver\ifserver.h(265) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Generating Code...
+Skipping... (no relevant changes detected)
+IFServerStatic.cpp
+Linking...
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12E.tmp" with contents
+[
+/nologo /o"Debug/IFServer.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\AlertScreenDlg.sbr
+.\Debug\AlertSMB.sbr
+.\Debug\AlertSysLog.sbr
+.\Debug\AlertUnixSocket.sbr
+.\Debug\BalloonHelp.sbr
+.\Debug\ConfigA.sbr
+.\Debug\ConfigB.sbr
+.\Debug\ConfigC.sbr
+.\Debug\ConfigD.sbr
+.\Debug\ConfigE.sbr
+.\Debug\DatabaseLog.sbr
+.\Debug\Decode.sbr
+.\Debug\Defrag.sbr
+.\Debug\DSizeCheck.sbr
+.\Debug\FastAlert.sbr
+.\Debug\FileManagement.sbr
+.\Debug\FullAlert.sbr
+.\Debug\HttpDecode.sbr
+.\Debug\IcmpCodeCheck.sbr
+.\Debug\IcmpIdCheck.sbr
+.\Debug\IcmpSeqCheck.sbr
+.\Debug\IcmpTypeCheck.sbr
+.\Debug\IFServer.sbr
+.\Debug\IFServerDlg.sbr
+.\Debug\IFServerStatic.sbr
+.\Debug\IFServerSubDlg.sbr
+.\Debug\IpIdCheck.sbr
+.\Debug\IpOptionCheck.sbr
+.\Debug\LibCap.sbr
+.\Debug\LineColl.sbr
+.\Debug\Log.sbr
+.\Debug\Manipulate.sbr
+.\Debug\Message.sbr
+.\Debug\MinFrag.sbr
+.\Debug\PatternMatch.sbr
+.\Debug\PortScan.sbr
+.\Debug\Preprocessor.sbr
+.\Debug\Respond.sbr
+.\Debug\RpcCheck.sbr
+.\Debug\Rules.sbr
+.\Debug\SelectAdaptor.sbr
+.\Debug\Session.sbr
+.\Debug\StringMan.sbr
+.\Debug\StrMan.sbr
+.\Debug\SysLog.sbr
+.\Debug\TcpAckCheck.sbr
+.\Debug\TcpDumpLog.sbr
+.\Debug\TcpFlagCheck.sbr
+.\Debug\TcpSeqCheck.sbr
+.\Debug\TrafficControl.sbr
+.\Debug\TtlCheck.sbr]
+Creating command line "bscmake.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12E.tmp"
+Creating browse info file...
+bscmake.exe terminated at user request.
+
+</pre>
+</body>
+</html>

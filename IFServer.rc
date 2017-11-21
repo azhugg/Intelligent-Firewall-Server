@@ -1,0 +1,605 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\IFServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\IFServer.ico"
+IDI_ICON_STARTLIGHT     ICON    DISCARDABLE     "res\\icon_sta.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IFSERVER_DIALOG DIALOGEX 0, 0, 425, 250
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Intelligent Firewall Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,24,199,72,
+                    14
+    PUSHBUTTON      "Cancel",IDCANCEL,24,215,34,14
+    PUSHBUTTON      "&Apply",IDC_BUTTON_STARTENGINE,24,164,72,32
+    PUSHBUTTON      "Stop Engine",IDC_BUTTON_STOPENGINE,7,237,6,6,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Select Adaptor",IDC_BUTTON_SELECTADAPTOR,0,8,6,6,NOT 
+                    WS_VISIBLE
+    CTEXT           "Adapter Not Selected",IDC_STATIC_ADAPTOR,0,1,8,8,NOT 
+                    WS_VISIBLE
+    CONTROL         "Tree1",IDC_PAGE_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,15,11,91,143
+    PUSHBUTTON      "Help",IDC_PHELP,62,215,34,14
+    CONTROL         "",IDC_DLG_FRAME,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,
+                    111,24,292,209
+    LTEXT           "",IDC_CAPTION_BAR,111,11,291,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,15,158,91,75
+END
+
+IDD_DIALOG_SELECT_ADAPTORS DIALOG DISCARDABLE  0, 0, 333, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose the Network Adapter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,276,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,276,24,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,254,81
+    LTEXT           "Current network adapter",IDC_STATIC,13,106,164,10
+    LTEXT           "NONE",IDC_ADAPTER,13,118,168,12
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 308, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO1,36,22,96,12,CBS_SIMPLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Administrator",IDC_STATIC,37,10,97,8
+    EDITTEXT        IDC_EDIT1,175,22,96,12,ES_LOWERCASE | ES_PASSWORD | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Password",IDC_STATIC,176,10,44,8
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITERECT | SS_SUNKEN | 
+                    WS_BORDER,34,45,239,98,WS_EX_DLGMODALFRAME | 
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         "",IDC_SHOCKWAVEFLASH1,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",WS_TABSTOP,37,
+                    48,232,91
+    CONTROL         "",IDC_SHOCKWAVEFLASH2,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",WS_TABSTOP,35,
+                    148,237,39
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 309, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,186,33,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,210,33,7,10
+    EDITTEXT        IDC_EDIT2,282,9,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,10,7,10
+    EDITTEXT        IDC_EDIT3,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT4,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT5,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT6,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN6,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT7,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN7,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT8,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN8,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT9,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN9,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT10,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN10,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT11,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN11,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT12,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN12,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT13,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN13,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT14,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN14,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT15,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN15,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT16,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN16,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT17,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN17,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT18,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN18,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT19,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN19,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    EDITTEXT        IDC_EDIT20,282,7,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPIN20,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT 
+                    WS_VISIBLE,295,9,7,10
+    GROUPBOX        "Blood Hound Sensitivity",IDC_STATIC,83,25,140,24
+    CONTROL         145,IDC_STATIC_INDI_1,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,91,41,5,2
+    CONTROL         145,IDC_STATIC_INDI_2,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,97,41,5,2
+    CONTROL         145,IDC_STATIC_INDI_3,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,103,41,5,2
+    CONTROL         145,IDC_STATIC_INDI_4,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,109,41,5,2
+    CONTROL         145,IDC_STATIC_INDI_5,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,115,41,5,2
+    CONTROL         147,IDC_STATIC_INDI_6,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,121,41,5,2
+    CONTROL         147,IDC_STATIC_INDI_7,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,127,41,5,2
+    CONTROL         147,IDC_STATIC_INDI_8,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,133,41,5,2
+    CONTROL         147,IDC_STATIC_INDI_9,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,139,41,5,2
+    CONTROL         147,IDC_STATIC_INDI_10,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,145,41,5,2
+    CONTROL         146,IDC_STATIC_INDI_11,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,151,41,5,2
+    CONTROL         146,IDC_STATIC_INDI_12,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,157,41,5,2
+    CONTROL         146,IDC_STATIC_INDI_13,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,163,41,5,2
+    CONTROL         146,IDC_STATIC_INDI_14,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,169,41,5,2
+    CONTROL         146,IDC_STATIC_INDI_15,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,175,41,5,2
+    GROUPBOX        "Current Log Directory",IDC_STATIC_DIR,83,51,140,27
+    CONTROL         "",IDC_STATIC_DIRECTORY,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,87,62,119,10
+    PUSHBUTTON      "...",IDC_BUTTON1,211,56,9,20,BS_FLAT
+    GROUPBOX        "Rules Directory",IDC_STATIC_RULES_DIR,83,80,140,27
+    CONTROL         "",IDC_STATIC_RULES_DIRECTORY,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,87,91,119,10
+    PUSHBUTTON      "...",IDC_BUTTON4,211,85,9,20,BS_FLAT
+    GROUPBOX        "Main Rule File",IDC_STATIC_RULES_FILE,83,108,140,27
+    CONTROL         "",IDC_STATIC_RULE_FILE,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,87,120,119,10
+    PUSHBUTTON      "...",IDC_BUTTON5,211,113,9,20,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,87,39,
+                    98,6,WS_EX_TRANSPARENT
+    GROUPBOX        "Deny List File",IDC_STATIC_DENY_LIST_FILE,83,137,140,27
+    CONTROL         "",IDC_STATIC_DENY_LIST,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,87,149,119,10
+    PUSHBUTTON      "...",IDC_BUTTON6,211,142,9,20,BS_FLAT
+    PUSHBUTTON      "Button3",IDC_BUTTON3,296,7,6,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 309, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    24,170,262,12
+    CONTROL         "",IDC_STATIC_PROGRESS_STATUS,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,24,150,262,16
+    GROUPBOX        "Engine Mode",IDC_STATIC_ENGINE,14,12,266,27
+    CONTROL         "Sniffer",IDC_RADIO_SNIFFER,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,77,23,60,12
+    CONTROL         "IDS Only",IDC_RADIO_IDS_ONLY,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,146,23,60,12
+    CONTROL         "Firewall",IDC_RADIO_FIREWALL,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,213,23,60,12
+    CONTROL         144,IDC_STATIC_SNIFFER,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,104,18,9,4
+    CONTROL         144,IDC_STATIC_IDS,"Static",SS_BITMAP | NOT WS_VISIBLE,
+                    171,18,9,4
+    CONTROL         144,IDC_STATIC_FIREWALL,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,237,18,9,4
+    GROUPBOX        "Engine Control",IDC_STATIC_ENGINE_CONTROL,188,80,78,53,
+                    WS_GROUP
+    CONTROL         "Start Engine",IDC_RADIO_START_ENGINE,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,197,95,60,12
+    CONTROL         "Stop Engine",IDC_RADIO_STOP_ENGINE,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,197,115,60,12
+    GROUPBOX        "Adapter Settings",IDC_STATIC_SELECT_ADAPTER,43,104,78,
+                    29,WS_GROUP
+    PUSHBUTTON      "Select Adapter",IDC_BUTTON_SELECT_ADAPTER,52,115,60,12
+    CTEXT           "Not Selected",IDC_STATIC_ADAPTER_NAME,19,51,255,10,
+                    SS_SUNKEN
+    GROUPBOX        "Adapter",IDC_STATIC,14,41,266,25
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 309, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN | 
+                    WS_BORDER,301,7,1,50,WS_EX_TRANSPARENT
+    SCROLLBAR       IDC_SCROLLBAR1,293,7,9,61,SBS_BOTTOMALIGN | SBS_VERT | 
+                    NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN | NOT 
+                    WS_VISIBLE | WS_BORDER,301,7,1,54,WS_EX_TRANSPARENT
+    CONTROL         "Open Bay Doors",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE | WS_TABSTOP,293,50,8,14
+    SCROLLBAR       IDC_SCROLLBAR5,293,7,9,50,SBS_BOTTOMALIGN | SBS_VERT | 
+                    NOT WS_VISIBLE
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    24,120,100,14
+    LTEXT           "Client To Ban",IDC_STATIC,24,110,92,8
+    GROUPBOX        "Bans",IDC_STATIC,18,95,266,45
+    LISTBOX         IDC_LIST_IDSRULES,18,34,266,59,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    CONTROL         "Edit Main Rule File",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,180,13,94,14
+    GROUPBOX        "IDS Rules",IDC_STATIC_IDS,18,3,266,31
+    LISTBOX         IDC_LIST2,24,15,103,11,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BUTTON1,128,15,13,11,BS_FLAT
+    LISTBOX         IDC_LIST3,18,140,266,59,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Flush Interface",IDC_BUTTON3,180,104,94,14
+    PUSHBUTTON      "Delete Deny Filter",IDC_BUTTON2,180,120,94,14
+    PUSHBUTTON      "Ban",IDC_BUTTON8,125,120,17,14,BS_FLAT
+    PUSHBUTTON      "Statistics",IDC_BUTTON9,125,104,48,14,BS_FLAT
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 309, 202
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST_ALERTS,12,19,271,127,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Alerts Log",IDC_STATIC_ALERTSTAT,6,10,283,142
+    GROUPBOX        "Dump Log",IDC_STATIC_DUMPSTAT,13,161,69,26
+    GROUPBOX        "Clear",IDC_STATIC,201,154,88,23
+    PUSHBUTTON      "",IDC_BUTTON1,227,162,58,10
+    PUSHBUTTON      "...",IDC_BUTTON2,61,169,14,14,BS_CENTER | BS_VCENTER | 
+                    BS_FLAT
+END
+
+IDD_DIALOG6 DIALOG DISCARDABLE  0, 0, 578, 407
+STYLE DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_SHOCKWAVEFLASH1,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",0x0,7,7,564,393
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "IFServer MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "IFServer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "IFServer.EXE\0"
+            VALUE "ProductName", "IFServer Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_IFSERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_DIALOG_SELECT_ADAPTORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 571
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 400
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CAP_WIZ             BITMAP  DISCARDABLE     "Cap_Wizi.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_STARTLIGHT          BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_IND_1               BITMAP  DISCARDABLE     "res\\indicato.bmp"
+IDB_IND_2               BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_IND_3               BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG1 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 14, 0
+0x6441, 0x696d, 0x696e, 0x7473, 0x6172, 0x6f74, 0x0072, 
+    IDC_SHOCKWAVEFLASH1, 0x376, 256, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0300, 0x0000, 0x23f8, 0x0000, 0x0f4c, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0024, 0x0000, 0x0065, 
+0x003a, 0x005c, 0x0074, 0x0065, 0x006d, 0x0070, 0x005c, 0x0069, 0x006e, 
+0x0074, 0x0072, 0x006f, 0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 
+0x0024, 0x0000, 0x0065, 0x003a, 0x005c, 0x0074, 0x0065, 0x006d, 0x0070, 
+0x005c, 0x0069, 0x006e, 0x0074, 0x0072, 0x006f, 0x002e, 0x0073, 0x0077, 
+0x0066, 0x0000, 0x0008, 0x000e, 0x0000, 0x0057, 0x0069, 0x006e, 0x0064, 
+0x006f, 0x0077, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x0008, 0x000a, 
+0x0000, 0x0048, 0x0069, 0x0067, 0x0068, 0x0000, 0x0008, 0x0002, 0x0000, 
+0x0000, 0x000b, 0xffff, 0x0008, 0x0024, 0x0000, 0x0065, 0x003a, 0x005c, 
+0x0074, 0x0065, 0x006d, 0x0070, 0x005c, 0x0069, 0x006e, 0x0074, 0x0072, 
+0x006f, 0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 0x0010, 0x0000, 
+0x0053, 0x0068, 0x006f, 0x0077, 0x0041, 0x006c, 0x006c, 0x0000, 0x000b, 
+0x0000, 0x000b, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 
+    IDC_SHOCKWAVEFLASH2, 0x376, 238, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0300, 0x0000, 0x24cb, 0x0000, 0x0683, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x001e, 0x0000, 0x0065, 
+0x003a, 0x005c, 0x0074, 0x0065, 0x006d, 0x0070, 0x005c, 0x0062, 0x0079, 
+0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 0x001e, 0x0000, 0x0065, 
+0x003a, 0x005c, 0x0074, 0x0065, 0x006d, 0x0070, 0x005c, 0x0062, 0x0079, 
+0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 0x000e, 0x0000, 0x0057, 
+0x0069, 0x006e, 0x0064, 0x006f, 0x0077, 0x0000, 0x000b, 0xffff, 0x000b, 
+0xffff, 0x0008, 0x000a, 0x0000, 0x0048, 0x0069, 0x0067, 0x0068, 0x0000, 
+0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 0x0008, 0x001e, 0x0000, 
+0x0065, 0x003a, 0x005c, 0x0074, 0x0065, 0x006d, 0x0070, 0x005c, 0x0062, 
+0x0079, 0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 0x0010, 0x0000, 
+0x0053, 0x0068, 0x006f, 0x0077, 0x0041, 0x006c, 0x006c, 0x0000, 0x000b, 
+0x0000, 0x000b, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 
+    0
+END
+
+IDD_DIALOG6 DLGINIT
+BEGIN
+    IDC_SHOCKWAVEFLASH1, 0x376, 256, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0300, 0x0000, 0x5770, 0x0000, 0x420b, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0024, 0x0000, 0x0065, 
+0x003a, 0x005c, 0x0074, 0x0065, 0x006d, 0x0070, 0x005c, 0x0041, 0x006c, 
+0x0065, 0x0072, 0x0074, 0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 
+0x0024, 0x0000, 0x0065, 0x003a, 0x005c, 0x0074, 0x0065, 0x006d, 0x0070, 
+0x005c, 0x0041, 0x006c, 0x0065, 0x0072, 0x0074, 0x002e, 0x0073, 0x0077, 
+0x0066, 0x0000, 0x0008, 0x000e, 0x0000, 0x0057, 0x0069, 0x006e, 0x0064, 
+0x006f, 0x0077, 0x0000, 0x000b, 0xffff, 0x000b, 0x0000, 0x0008, 0x000a, 
+0x0000, 0x0048, 0x0069, 0x0067, 0x0068, 0x0000, 0x0008, 0x0002, 0x0000, 
+0x0000, 0x000b, 0x0000, 0x0008, 0x0024, 0x0000, 0x0065, 0x003a, 0x005c, 
+0x0074, 0x0065, 0x006d, 0x0070, 0x005c, 0x0041, 0x006c, 0x0065, 0x0072, 
+0x0074, 0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 0x0010, 0x0000, 
+0x0053, 0x0068, 0x006f, 0x0077, 0x0041, 0x006c, 0x006c, 0x0000, 0x000b, 
+0x0000, 0x000b, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\IFServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
